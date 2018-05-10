@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserDetail from './UserDetail';
+import UserListDetail from './UserListDetail';
 
 class UserList extends Component {
     state = {
@@ -14,20 +14,17 @@ class UserList extends Component {
 
   renderUsers() {
     return this.state.users.map(user =>
-      <UserDetail key={user.id} user={user}/>
+      <UserListDetail key={user.id} user={user}/>
     );
   }
 
   render() {
     return (
       <div className="">
-        <div className="">
-          <ul>
-            {this.renderUsers()}
-          </ul>
-        </div>
+        <ul>
+          {this.renderUsers()}
+        </ul>
       </div>
-
     );
   }
 }

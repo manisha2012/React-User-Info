@@ -1,37 +1,3 @@
 .App {
   text-align: center;
 }
-
-.Background {
-  min-height: 100vh;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-
-.Container {
-  padding-top: 100px;
-  z-index: 3;
-}
-
-.Box {
-  background-color: #FFFFFF;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 6px;
-  color: rgba(0,0,0, 0.87);
-  background: #fff;
-  min-height: 410px;
-}
-
-.Box .BoxHeader {
-  text-align: center;
-  padding: 25px 0 35px;
-}
-
-.BoxTitle {
-  margin: 0;
-  font-weight: 700;
-  color: #3C4858;
-  text-decoration: none;
-}
