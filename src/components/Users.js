@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
+
 import classes from './Users.css';
 import UserList from './UserList';
 import UserInfo from './UserInfo';
-import {Route, Link} from 'react-router-dom';
-
 import bgImg from '../assets/img/Img1.jpg';
 
-class App extends Component {
+class Users extends Component {
   render() {
     return (
       <div className={classes.Background} style={{backgroundImage: 'url('+bgImg+')'}}>
@@ -15,9 +15,6 @@ class App extends Component {
 		       <div className="col-sm-6 col-sm-offset-3">
              <div className={classes.Container}>
                <div className={classes.Box} >
-                 <div className={classes.BoxHeader}>
-		               <h3 className={classes.BoxTitle}><Link to="/">USERS</Link></h3>
-		             </div>
                  <Route path="/" exact component={UserList} />
                  <Route path="/view-details" component={UserInfo} />
                </div>
@@ -30,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Users;

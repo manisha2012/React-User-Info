@@ -2,6 +2,10 @@
   width: 6rem;
 }
 
+.UserListStyle {
+  list-style: none;
+}
+
 .UserDetails {
   padding: 1rem;
 }
@@ -17,4 +21,20 @@
 .UserName {
   font-family: 'Pangolin', cursive;
   color: #d1540b;
+}
+
+.UserLocation {
+  margin:0;
+}
+
+.BoxHeader {
+  text-align: center;
+  padding: 25px 0 35px;
+}
+
+.BoxTitle {
+  margin: 0;
+  font-weight: 700;
+  color: #3C4858;
+  text-decoration: none;
 }
