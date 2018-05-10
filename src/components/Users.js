@@ -4,7 +4,7 @@ import UserList from './UserList';
 import UserInfo from './UserInfo';
 import {Route, Link} from 'react-router-dom';
 
-import bgImg from '../assets/img/bgi.jpg';
+import bgImg from '../assets/img/Img1.jpg';
 
 class App extends Component {
   render() {
@@ -17,7 +17,6 @@ class App extends Component {
                <div className={classes.Box} >
                  <div className={classes.BoxHeader}>
 		               <h3 className={classes.BoxTitle}><Link to="/">USERS</Link></h3>
-									 <h5>THE LIST OF USERS</h5>
 		             </div>
                  <Route path="/" exact component={UserList} />
                  <Route path="/view-details" component={UserInfo} />

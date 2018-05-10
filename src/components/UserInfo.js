@@ -8,13 +8,18 @@ class UserInfo extends Component {
       return user.id === this.props.selectedUser;
     });
     var selectedUserObj = selectedUserArr[0];
-    console.log(selectedUserObj);
     return (
       <div className="row">
-        <div className="col-sm-6 col-sm-offset-3">
-          <h3>{selectedUserObj.first_name + " " + selectedUserObj.last_name}</h3>
+        <div className="col-sm-6 col-sm-offset-2">
+          <h3 className={classes.UserName}>{selectedUserObj.first_name + " " + selectedUserObj.last_name}</h3>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>cake</i>{selectedUserObj.dob}</p>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>class</i><small>{selectedUserObj.job_title}</small></p>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>work</i><small>{selectedUserObj.company}</small></p>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>email</i>{selectedUserObj.email}</p>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>call</i>{selectedUserObj.contact_no}</p>
+          <p><i className={[classes.IconMargin, 'material-icons'].join(' ')}>location_on</i>{selectedUserObj.state+", "+selectedUserObj.country}</p>
         </div>
-        <div className="col-sm-6 col-offset-3">
+        <div className="col-sm-2">
           <img className={[classes.UserInfoImage, 'img-rounded'].join(' ')} src={selectedUserObj.user_image} alt="avatar"/>
         </div>
       </div>

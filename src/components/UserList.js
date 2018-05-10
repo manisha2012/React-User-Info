@@ -8,7 +8,7 @@ class UserList extends Component {
       <UserListDetail key={user.id} user={user}/>
     );
   }
-
+  
   render() {
     return (
       <div>

@@ -9,3 +9,12 @@
 .UserInfoImage {
   width: 10rem;
 }
+
+.IconMargin {
+  margin-right: 1rem;
+}
+
+.UserName {
+  font-family: 'Pangolin', cursive;
+  color: #d1540b;
+}
